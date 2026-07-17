@@ -1,5 +1,7 @@
+/* style.css */
 :root {
-  --color-lavender: #b792b4;
+  --color-lavender: #9d6b9a;
+  --color-lavender-soft: #f7f0f6;
   --color-sage: #abc08d;
   --color-bg: #faf8f5;
   --color-text: #3a352f;
@@ -79,6 +81,9 @@ nav a.active {
 .hero {
   text-align: center;
   padding: 120px 20px 70px;
+  border-radius: 32px;
+  max-width: 1040px;
+  margin: 20px auto;
 }
 
 .hero h1 {
@@ -136,7 +141,7 @@ section h2 {
 
 .card {
   background: #f7f2f0;
-  border-radius: 4px;
+  border-radius: 24px;
   padding: 36px 28px;
   border: 1px solid rgba(183, 146, 180, 0.25);
   box-shadow: none;
@@ -177,10 +182,11 @@ section h2 {
 
 .cta-footer {
   background: var(--color-sage);
-  border-radius: 24px;
+  border-radius: 32px;
   color: #fff;
   padding: 60px 20px;
-  max-width: 900px;
+  max-width: 1040px;
+  margin: 20px auto;
 }
 
 .cta-footer h2 {
@@ -223,4 +229,25 @@ section h2 {
   opacity: 0.5;
   font-style: italic;
   margin-top: 8px;
+}
+
+.hero {
+  background: var(--color-lavender-soft);
+}
+
+.services-grid {
+  background: var(--color-lavender-soft);
+  border-radius: 32px;
+  max-width: 1040px;
+  margin: 20px auto;
+}
+
+.teaser,
+.testimonials {
+  background: var(--color-bg);
+  border-radius: 32px;
+  border: 1px solid rgba(0,0,0,0.05);
+  max-width: 1040px;
+  margin: 20px auto;
+  padding: 60px 20px;
 }
