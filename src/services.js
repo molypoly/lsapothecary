@@ -6,13 +6,13 @@ loadNav('services')
 document.querySelector('#app').innerHTML = `
   <section class="hero">
     <h1>Services</h1>
-    <p class="subtitle">Nurtured Spirits — reiki, herbalism, and spiritual guidance</p>
+    <p class="subtitle">Nurtured Spirits, reiki, herbalism, and spiritual guidance</p>
   </section>
 
   <section class="services-detail">
     <div class="service-block">
       <h2>Reiki Sessions</h2>
-      <p>Full sessions, Rapid Reiki (shorter sessions), or chakra-focused sessions — available for people of all ages, animals, events, and spaces.</p>
+      <p>Full sessions, Rapid Reiki (shorter sessions), or chakra-focused sessions, available for people of all ages, animals, events, and spaces.</p>
       <p class="placeholder-note">Placeholder: duration and pricing</p>
     </div>
 
