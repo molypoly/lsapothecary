@@ -1,38 +1,57 @@
+// services.js
 import './style.css'
 import { loadNav } from './partials.js'
 
 loadNav('services')
 
 document.querySelector('#app').innerHTML = `
-  <section class="hero">
-    <h1>Services</h1>
-    <p class="subtitle">Nurtured Spirits, reiki, herbalism, and spiritual guidance</p>
+  <section class="hero hero--services">
+    <img src="/ns-tree.png" class="ns-tree" alt="" />
+    <h1>Nurtured Spirits</h1>
+    <p class="subtitle">Reiki, readings, energy clearing, and more</p>
   </section>
 
   <section class="services-detail">
     <div class="service-block">
-      <h2>Reiki Sessions</h2>
-      <p>Full sessions, Rapid Reiki (shorter sessions), or chakra-focused sessions, available for people of all ages, animals, events, and spaces.</p>
-      <p class="placeholder-note">Placeholder: duration and pricing</p>
+      <h2>Readings by Rosie</h2>
+      <div class="service-row"><span class="service-name">Single Card Draw</span><span class="service-meta">15–30 min · $25</span></div>
+      <div class="service-row"><span class="service-name">Three Card Spread</span><span class="service-meta">30–45 min · $50</span></div>
+      <div class="service-row"><span class="service-name">Five Card Spread</span><span class="service-meta">45–60 min · $80</span></div>
+      <div class="service-row"><span class="service-name">Intuitive Energy and Card Reading</span><span class="service-meta">45–60 min · $100</span></div>
     </div>
 
     <div class="service-block">
-      <h2>Herbalism</h2>
-      <p>Custom herbal teas and Epsom salt bath soaks, blended for your specific needs. Tinctures and salves coming soon.</p>
-      <p class="placeholder-note">Placeholder: duration and pricing</p>
+      <h2>Reiki with Rosie</h2>
+      <div class="service-row"><span class="service-name">Intake and Consultation</span><span class="service-meta">30 min · Free</span></div>
+      <div class="service-row"><span class="service-name">Rapid Reiki</span><span class="service-meta">15–30 min · $60</span></div>
+      <div class="service-row"><span class="service-name">Chakra Balance</span><span class="service-meta">15–30 min · $60</span></div>
+      <div class="service-row"><span class="service-name">Full Reiki Treatment (First Session)</span><span class="service-meta">45–60 min · $80</span></div>
+      <div class="service-row"><span class="service-name">Full Reiki Treatment (Follow-ups)</span><span class="service-meta">45–60 min · $120</span></div>
     </div>
 
     <div class="service-block">
-      <h2>Spiritual Coaching &amp; Guided Meditation</h2>
-      <p>Life coaching and guided meditation to support your personal journey.</p>
-      <p class="placeholder-note">Placeholder: duration and pricing</p>
+      <h2>Energy Clearing</h2>
+      <div class="service-row"><span class="service-name">Move In Standard</span><span class="service-meta">30–45 min · $50</span></div>
+      <div class="service-row"><span class="service-name">The Eviction Notice</span><span class="service-meta">45–60 min · $80</span></div>
+      <div class="service-row"><span class="service-name">Realign Reaffirm Refresh</span><span class="service-meta">30 min · $60</span></div>
+      <div class="service-row"><span class="service-name">Events</span><span class="service-meta">60–90 min · $100–$250</span></div>
     </div>
 
     <div class="service-block">
-      <h2>Intuitive Readings</h2>
-      <p>Tarot readings for guidance and reflection.</p>
-      <p class="placeholder-note">Placeholder: duration and pricing</p>
+      <h2>Nurtured Spirits Coaching</h2>
+      <div class="service-row"><span class="service-name">Consultation</span><span class="service-meta">30 min · Free</span></div>
+      <div class="service-row"><span class="service-name">First Session</span><span class="service-meta">$80 (regular $120)</span></div>
     </div>
+
+    <div class="service-block">
+      <h2>Weddings by Rosie</h2>
+      <div class="service-row"><span class="service-name">I Do &amp; Done (Elopement Style)</span><span class="service-meta">$200 + travel if beyond 15km</span></div>
+      <div class="service-row"><span class="service-name">Non-Denominational Ceremony</span><span class="service-meta">$500 + travel if beyond 15km</span></div>
+      <div class="service-row"><span class="service-name">Custom Handfasting Ceremony</span><span class="service-meta">$700 + travel if beyond 15km</span></div>
+      <p class="placeholder-note">Half officiant fee due upfront as a non-refundable deposit</p>
+    </div>
+
+    <p class="placeholder-note">Travel fees: $0.70/km beyond 15km. Mobile sessions currently available in Kelowna proper; travel fees apply for West Kelowna, Lake Country, and beyond.</p>
   </section>
 
   <section class="cta-footer">
