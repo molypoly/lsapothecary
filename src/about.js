@@ -4,7 +4,9 @@ import { loadNav } from './partials.js'
 loadNav('about')
 
 document.querySelector('#app').innerHTML = `
-  <section class="hero">
+  <section class="hero hero--about">
+    <img src="/about-sprig.png" class="about-sprig" alt="" />
+    <img src="/about-bottom.png" class="about-bottom" alt="" />
     <h1>About Rosealyn</h1>
     <p class="subtitle">Holistic practitioner, healer, and guide</p>
   </section>
