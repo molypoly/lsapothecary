@@ -494,3 +494,12 @@ section h2 {
   transform: rotate(80deg) scaleX(-1);
 }
 
+@media (max-width: 640px) {
+  .services-grid .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .services-detail {
+    grid-template-columns: 1fr;
+  }
+}
