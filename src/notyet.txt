@@ -1,0 +1,10 @@
+
+services.js (below spirits coaching)
+
+    <div class="service-card service-card--full">
+      <h2>Weddings by Rosie</h2>
+      <div class="service-row"><span class="service-name">I Do &amp; Done (Elopement Style)</span><span class="service-meta">$200 + travel if beyond 15km</span></div>
+      <div class="service-row"><span class="service-name">Non-Denominational Ceremony</span><span class="service-meta">$500 + travel if beyond 15km</span></div>
+      <div class="service-row"><span class="service-name">Custom Handfasting Ceremony</span><span class="service-meta">$700 + travel if beyond 15km</span></div>
+      <p class="placeholder-note">Half officiant fee due upfront as a non-refundable deposit</p>
+    </div>

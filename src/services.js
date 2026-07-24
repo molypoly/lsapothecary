@@ -43,13 +43,7 @@ document.querySelector('#app').innerHTML = `
       <div class="service-row"><span class="service-name">First Session</span><span class="service-meta">$80 (regular $120)</span></div>
     </div>
 
-    <div class="service-card service-card--full">
-      <h2>Weddings by Rosie</h2>
-      <div class="service-row"><span class="service-name">I Do &amp; Done (Elopement Style)</span><span class="service-meta">$200 + travel if beyond 15km</span></div>
-      <div class="service-row"><span class="service-name">Non-Denominational Ceremony</span><span class="service-meta">$500 + travel if beyond 15km</span></div>
-      <div class="service-row"><span class="service-name">Custom Handfasting Ceremony</span><span class="service-meta">$700 + travel if beyond 15km</span></div>
-      <p class="placeholder-note">Half officiant fee due upfront as a non-refundable deposit</p>
-    </div>
+    
 
     <p class="placeholder-note travel-note">Travel fees: $0.70/km beyond 15km. Mobile sessions currently available in Kelowna proper; travel fees apply for West Kelowna, Lake Country, and beyond.</p>
   </section>

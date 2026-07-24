@@ -1,11 +1,15 @@
+// main.js
 import './style.css'
-import { loadNav } from './partials.js'
+import { loadNav, loadFooter } from './partials.js'
 
 loadNav('home')
+loadFooter()
 
 document.querySelector('#app').innerHTML = `
   <section class="hero">
-    <h1>Lavender &amp; Sage Apothecary</h1>
+    <div class="hero-logo-slot">
+      <img src="/logo-hero.png" alt="Lavender &amp; Sage Apothecary" class="hero-logo" />
+    </div>
     <p class="subtitle">Reiki healing, herbalism, and spiritual guidance rooted in nature.</p>
     <a href="/booking.html" class="btn">Book a Session</a>
   </section>

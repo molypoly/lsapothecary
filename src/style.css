@@ -171,7 +171,7 @@ nav a.active {
 
 .hero {
   text-align: center;
-  padding: 120px 20px 70px;
+  padding: 60px 20px 70px; 
   border-radius: 32px;
   max-width: 1040px;
   margin: 20px auto;
@@ -221,6 +221,23 @@ nav a.active {
   margin: 0 auto 36px;
 }
 
+.hero-logo-slot {
+  position: relative;
+  width: 100%;
+  height: clamp(260px, 34vw, 420px);
+  margin: 0 auto 0;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(340px, 44vw, 520px);
+  height: auto;
+  pointer-events: none;
+}
+
 .hero--services .subtitle {
   background: rgba(250, 248, 245, 0.05);
   backdrop-filter: blur(4px);
@@ -240,9 +257,9 @@ nav a.active {
 
 .about-sprig {
   position: absolute;
-  top: 15px;
-  right: 25px;
-  width: clamp(120px, 15vw, 220px);
+  top: -15px;
+  right: -15px;
+  width: clamp(120px, 20vw, 220px);
   opacity: 0.9;
   pointer-events: none;
   transform: rotate(-100deg);
@@ -250,9 +267,9 @@ nav a.active {
 
 .about-bottom {
   position: absolute;
-  bottom: 15px;
-  left: 25px;
-  width: clamp(120px, 15vw, 220px);
+  bottom: -15px;
+  left: -15px;
+  width: clamp(120px, 20vw, 220px);
   opacity: 0.9;
   pointer-events: none;
 }
@@ -482,7 +499,7 @@ section h2 {
   content: '';
   position: absolute;
   width: clamp(180px, 24vw, 320px);
-  height: clamp(180px, 24vw, 320px);
+  height: clamp(150px, 24vw, 320px);
   top: clamp(-190px, -12vw, -60px);
   right: clamp(-10px, 3vw, 35px);
   background-image: url('/long1.png');
@@ -502,4 +519,71 @@ section h2 {
   .services-detail {
     grid-template-columns: 1fr;
   }
+}
+
+footer {
+  position: relative;
+  z-index: 10;
+  padding: 32px 32px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  margin-top: 40px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: var(--color-lavender);
+}
+
+.footer-credit {
+  font-size: 12px;
+  opacity: 0.5;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.footer-credit a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: var(--color-sage-text);
+  text-decoration: none;
+  font-size: 13px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.footer-social a:hover {
+  opacity: 1;
 }
