@@ -1,8 +1,9 @@
 // services.js
 import './style.css'
-import { loadNav } from './partials.js'
+import { loadNav, loadFooter } from './partials.js'
 
 loadNav('services')
+loadFooter()
 
 document.querySelector('#app').innerHTML = `
   <section class="hero hero--services">

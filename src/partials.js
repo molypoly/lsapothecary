@@ -12,7 +12,7 @@ export function loadNav(activePage) {
       <a href="/about.html" class="${activePage === 'about' ? 'active' : ''}">About</a>
       <a href="/services.html" class="${activePage === 'services' ? 'active' : ''}">Services</a>
       <a href="/booking.html" class="${activePage === 'booking' ? 'active' : ''}">Booking</a>
-      <a href="/faq.html" class="${activePage === 'faq' ? 'active' : ''}">FAQ</a>
+      <a href="/faq.html" class="${activePage === 'faq' ? 'active' : ''}">Journal</a>
       <a href="/contact.html" class="${activePage === 'contact' ? 'active' : ''}">Contact</a>
     </div>
   `
@@ -35,7 +35,7 @@ export function loadFooter() {
         <a href="/about.html">About</a>
         <a href="/services.html">Services</a>
         <a href="/booking.html">Booking</a>
-        <a href="/faq.html">FAQ</a>
+        <a href="/faq.html">Journal</a>
         <a href="/contact.html">Contact</a>
       </div>
       <p class="footer-credit">Designed by <a href="https://digitizeokanagan.com" target="_blank" rel="noopener">Digitize Okanagan</a></p>

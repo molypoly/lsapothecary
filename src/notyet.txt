@@ -8,3 +8,13 @@ services.js (below spirits coaching)
       <div class="service-row"><span class="service-name">Custom Handfasting Ceremony</span><span class="service-meta">$700 + travel if beyond 15km</span></div>
       <p class="placeholder-note">Half officiant fee due upfront as a non-refundable deposit</p>
     </div>
+
+
+
+main.hs (below Nurtured spirits)
+
+      <section class="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>"Placeholder testimonial quote goes here." <span>— Client Name</span></blockquote>
+        <blockquote>"Placeholder testimonial quote goes here." <span>— Client Name</span></blockquote>
+      </section>

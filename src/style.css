@@ -33,6 +33,9 @@ body {
   margin: 0;
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body::before {
@@ -167,6 +170,7 @@ nav a.active {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 32px;
+  flex: 1;
 }
 
 .hero {
@@ -519,14 +523,173 @@ section h2 {
   .services-detail {
     grid-template-columns: 1fr;
   }
+
+  .journal-index {
+    grid-template-columns: 1fr;
+  }
 }
 
+
+.journal-index {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  text-align: left;
+  margin-bottom: 300px;
+}
+
+.journal-post {
+  background: #f7f2f0;
+  border-radius: 24px;
+  padding: 28px 24px;
+  border: 1px solid rgba(183, 146, 180, 0.25);
+}
+
+.journal-tag {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-sage-text);
+  background: rgba(171, 192, 141, 0.15);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.journal-post h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.journal-post p {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-bottom: 14px;
+}
+
+.journal-read-more {
+  color: var(--color-lavender);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+
+.contact-section {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 6px;
+}
+
+.contact-form label {
+  font-size: 14px;
+  color: var(--color-sage-text);
+  margin-top: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(183, 146, 180, 0.3);
+  background: #fff;
+  color: var(--color-text);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  margin-top: 20px;
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.booking-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.booking-btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(183, 146, 180, 0.4);
+  background: #fff;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.booking-btn:hover {
+  background: rgba(157, 107, 154, 0.1);
+}
+
+.booking-btn.active {
+  background: var(--color-lavender);
+  color: #fff;
+  border-color: var(--color-lavender);
+}
+
+.booking-calendar-section {
+  max-width: 900px;
+  padding-bottom: 0;
+}
+
+.booking-group {
+  margin-bottom: 24px;
+}
+
+.booking-group:last-child {
+  margin-bottom: 0;
+}
+
+.booking-group-title {
+  font-size: 15px;
+  color: var(--color-sage-text);
+  text-align: center;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.booking-services {
+  max-width: 900px;
+  display: block;
+  padding-bottom: 0px;
+}
+
+
+
+
 footer {
-  position: relative;
-  z-index: 10;
-  padding: 32px 32px;
-  border-top: 1px solid rgba(0,0,0,0.06);
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 13px;
+  opacity: 1;
+  background: rgba(157, 107, 154, 0.05);
+  border-top: 1px solid rgba(183, 146, 180, 0.2);
   margin-top: 40px;
+}
+
+footer a {
+  color: var(--color-text);
 }
 
 .footer-row {
@@ -567,8 +730,14 @@ footer {
 }
 
 .footer-credit a {
-  color: var(--color-text);
+  color: #ff6b35;
   text-decoration: underline;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(255, 107, 53, 0.3);
+}
+
+.footer-credit a:hover {
+  opacity: 0.7;
 }
 
 .footer-social {
@@ -587,3 +756,4 @@ footer {
 .footer-social a:hover {
   opacity: 1;
 }
+

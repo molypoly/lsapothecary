@@ -15,9 +15,10 @@ document.querySelector('#app').innerHTML = `
   </section>
 
   <section class="teaser">
-    <h2>About Rosealyn</h2>
-    <p>Placeholder: a short bio introducing Rosealyn as a holistic practitioner, master reiki practitioner, herbalist, spiritual guide, and end-of-life doula.</p>
-    <a href="/about.html">Read More →</a>
+    <h2>Welcome to Lavender & Sage Apothecary</h2>
+    <p>Welcome, and thank you for being here. Lavender & Sage Apothecary is a space rooted in compassion, curiosity, and intentional healing, a place to slow down, reconnect, and explore practices that support your mind, body, and spirit.</p>
+    <p>Here, our focus stays grounded in Dharma, not Dogma. Healing is a personal journey, and there is no single path that fits everyone. All are welcome exactly as they are, and I invite you to explore what resonates, discover what supports you, and take the next step on your own unique journey.</p>
+    <a href="/about.html">Read More of My Story →</a>
   </section>
 
   <section class="services-grid">
@@ -42,12 +43,6 @@ document.querySelector('#app').innerHTML = `
       </div>
     </div>
     <a href="/services.html">View All Services →</a>
-  </section>
-
-  <section class="testimonials">
-    <h2>Testimonials</h2>
-    <blockquote>"Placeholder testimonial quote goes here." <span>— Client Name</span></blockquote>
-    <blockquote>"Placeholder testimonial quote goes here." <span>— Client Name</span></blockquote>
   </section>
 
   <section class="cta-footer">
