@@ -115,10 +115,6 @@ function loadCalendar(calLink) {
 // Load the first service's calendar by default
 loadCalendar('landsapothecary/intake')
 
-setTimeout(() => {
-  document.getElementById('my-cal-inline-booking').scrollIntoView({ behavior: 'smooth', block: 'start' })
-}, 900)
-
 // Wire up button clicks to swap the calendar
 document.querySelectorAll('.booking-btn').forEach((btn) => {
   btn.addEventListener('click', () => {
