@@ -1,14 +1,15 @@
 import './style.css'
 import { loadNav, loadFooter } from './partials.js'
 
-loadNav('faq')
+loadNav('journal')
 loadFooter()
 
 document.querySelector('#app').innerHTML = `
-  <section class="hero">
-    <h1>Apothecary Journal</h1>
-    <p class="subtitle">Micro-learnings on herbs, crystals, and healing modalities</p>
-  </section>
+  <section class="hero hero--journal hero--no-corner">
+  <h1>Apothecary Journal</h1>
+  <p class="subtitle">Micro-learnings on herbs, crystals, and healing modalities</p>
+  <img src="/journal_side.png" alt="" class="journal-side-decor" />
+</section>
 
   <section class="journal-index">
     <div class="journal-post">

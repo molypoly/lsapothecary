@@ -1,3 +1,4 @@
+<!-- booking.html -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,6 +11,17 @@
     <title>Booking | L & S Apothecary</title>
   </head>
   <body>
+    <!-- Hidden form for Netlify's build-time form detection -->
+    <form name="booking-request" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="service" />
+      <input type="text" name="preferred-datetime" />
+      <textarea name="notes"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+
     <div id="app"></div>
     <script type="module" src="/src/booking.js"></script>
   </body>

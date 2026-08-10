@@ -11,6 +11,14 @@
     <title>Contact | L & S Apothecary</title>
   </head>
   <body>
+    <!-- Hidden form for Netlify's build-time form detection -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+
     <div id="app"></div>
     <script type="module" src="/src/contact.js"></script>
   </body>
