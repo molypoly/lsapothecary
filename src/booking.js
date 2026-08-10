@@ -6,7 +6,7 @@ loadNav('booking')
 loadFooter()
 
 document.querySelector('#app').innerHTML = `
-  <section class="hero">
+  <section class="hero hero--no-corner">
     <h1>Booking</h1>
     <p class="subtitle">Choose a service, then send us a request and we'll confirm a time with you</p>
   </section>

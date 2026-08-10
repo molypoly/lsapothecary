@@ -16,6 +16,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  
+}
+
 h1, h2, h3 {
   font-family: 'Cormorant Garamond', serif;
 }
@@ -425,6 +429,13 @@ section h2 {
 .cta-footer .btn {
   background: #fff;
   color: var(--color-sage-text);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 24px;
 }
 
 .section-intro {
@@ -988,6 +999,28 @@ footer a {
   gap: 20px;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .footer-row {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-meta {
+    justify-content: center;
+  }
+}
+
+.footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .footer-links {

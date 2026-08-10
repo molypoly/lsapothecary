@@ -38,10 +38,12 @@ export function loadFooter() {
         <a href="/journal.html">Journal</a>
         <a href="/contact.html">Contact</a>
       </div>
-      <p class="footer-credit">Designed by <a href="https://digitizeokanagan.com" target="_blank" rel="noopener">Digitize Okanagan</a></p>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/landsapothecary713/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/people/Lavender-Sage-Apothecary/61575444639013/" target="_blank" rel="noopener">Facebook</a>
+      <div class="footer-meta">
+        <p class="footer-credit">Designed by <a href="https://digitizeokanagan.com" target="_blank" rel="noopener">Digitize Okanagan</a></p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/landsapothecary713/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/people/Lavender-Sage-Apothecary/61575444639013/" target="_blank" rel="noopener">Facebook</a>
+        </div>
       </div>
     </div>
   `
