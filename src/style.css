@@ -260,7 +260,7 @@ nav a.active {
   font-size: clamp(17px, 2.2vw, 22px);
   color: var(--color-text);
   opacity: 0.75;
-  max-width: 500px;
+  max-width: 560px;
   margin: 0 auto 36px;
 }
 
@@ -315,6 +315,25 @@ nav a.active {
   width: clamp(120px, 20vw, 220px);
   opacity: 0.9;
   pointer-events: none;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f7f2f0;
+  border-radius: 24px;
+  padding: 56px 64px;
+  border: 1px solid rgba(183, 146, 180, 0.25);
+  text-align: left;
+  line-height: 1.75;
+}
+
+.about-content p {
+  margin: 0 0 24px;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
 }
 
 .hero--services h1,
@@ -707,12 +726,18 @@ section h2 {
 }
 
 .contact-form label {
+  font-family: 'Jost', sans-serif;
   display: block;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--color-sage-text);
   margin-top: 16px;
+}
+
+.contact-info-label,
+.contact-info-value {
+  font-family: 'Jost', sans-serif;
 }
 
 .contact-form input,
@@ -1078,3 +1103,8 @@ footer a {
   opacity: 1;
 }
 
+@media (max-width: 500px) {
+  .hero--about h1 {
+    margin-top: 60px;
+  }
+}

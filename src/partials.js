@@ -20,9 +20,20 @@ export function loadNav(activePage) {
 
   const toggle = nav.querySelector('.nav-toggle')
   const links = nav.querySelector('.nav-links')
+
   toggle.addEventListener('click', () => {
     links.classList.toggle('open')
     toggle.classList.toggle('open')
+  })
+
+  document.addEventListener('click', (e) => {
+    const isOpen = links.classList.contains('open')
+    const clickedInsideNav = nav.contains(e.target)
+
+    if (isOpen && !clickedInsideNav) {
+      links.classList.remove('open')
+      toggle.classList.remove('open')
+    }
   })
 }
 
