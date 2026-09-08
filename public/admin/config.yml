@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: molypoly/lsapothecary
+  branch: main
+  base_url: https://api.netlify.com
+
+media_folder: "public/journal-images"
+public_folder: "/journal-images"
+
+collections:
+  - name: "journal"
+    label: "Apothecary Journal"
+    folder: "content/journal"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tag", name: "tag", widget: "select", options: ["Herbalism", "Crystals", "Reiki"] }
+      - { label: "Excerpt", name: "excerpt", widget: "text", hint: "A short preview shown on the journal listing page" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Date", name: "date", widget: "datetime" }
