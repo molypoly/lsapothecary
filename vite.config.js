@@ -10,6 +10,7 @@ export default defineConfig({
         services: resolve(__dirname, 'services.html'),
         booking: resolve(__dirname, 'booking.html'),
         journal: resolve(__dirname, 'journal.html'),
+        journalPost: resolve(__dirname, 'journal-post.html'),
         contact: resolve(__dirname, 'contact.html'),
       },
     },
