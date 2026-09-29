@@ -4,6 +4,8 @@ backend:
   branch: main
   base_url: https://api.netlify.com
 
+publish_mode: editorial_workflow
+
 media_folder: "public/journal-images"
 public_folder: "/journal-images"
 
