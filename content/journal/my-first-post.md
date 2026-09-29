@@ -1,8 +1,9 @@
 ---
 title: Welcome to the Apothecary Journal
-tag: Herbalism
+tag: Crystals
 excerpt: A first look at what this space will become — herbs, crystals, and reflections on healing.
-date: 2026-09-08T00:00:00.000Z
+image: ''
+date: 2026-09-28T13:30:00
 ---
 
 This is the first entry in the Apothecary Journal. Over time, this space will hold reflections on herbalism, crystal work, Reiki, and the everyday practice of healing.
